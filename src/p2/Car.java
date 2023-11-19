@@ -1,4 +1,4 @@
-package p3;
+package p2;
 
 public class Car {
 
@@ -32,5 +32,11 @@ public class Car {
                 "model='" + model + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    public static int compare(Car car1, Car car2){
+        if (car1.getPrice() > car2.getPrice())
+            return 1;
+        return -1;
     }
 }
